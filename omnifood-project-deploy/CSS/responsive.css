@@ -1,0 +1,346 @@
+/********************/
+/* BELOW 1056px */
+/********************/
+
+@media (max-width: 66em) {
+  html {
+    font-size: 56.25%;
+  }
+  .hero {
+    max-width: 105rem;
+  }
+  .nav-main-list {
+    gap: 2.4rem;
+  }
+  .primary-heading {
+    font-size: 3.6rem;
+  }
+  .secondary-heading {
+    font-size: 3rem;
+  }
+  .tertiary-heading {
+    font-size: 2.4rem;
+  }
+  .hero-description {
+    font-size: 1.8rem;
+  }
+  .meal-name {
+    font-size: 2rem;
+  }
+  .btn:link,
+  .btn:visited {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.8rem;
+  }
+}
+
+/********************/
+/* BELOW 896px */
+/********************/
+
+@media (max-width: 56em) {
+  html {
+    font-size: 53.125%;
+    transform: translate(0, 0);
+  }
+  .hero {
+    max-width: 100rem;
+  }
+  .testimonials-content {
+    gap: 4.8rem;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .section-cta {
+    grid-template-columns: 3fr 2fr;
+  }
+  .cta-text-box {
+    padding: 6.4rem;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .cta--btn {
+    margin-top: 2.4rem;
+  }
+  .step-number {
+    font-size: 7.4rem;
+  }
+  .nav-main {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease-in;
+
+    /* ALLOWS NO TRANSITION AT ALL */
+    /* display: none; */
+
+    /* HIDE IT VISUALLY */
+    opacity: 0;
+
+    /* MAKE IT UANACCECSSIBLE TO MOUSE AND KEYBOARDS */
+    pointer-events: none;
+
+    /* HIDE IT FROM SCREEN READERS */
+    visibility: hidden;
+
+    transform: translateX(100%);
+  }
+
+  .nav-open .nav-main {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-main-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 2.4rem;
+  }
+
+  .btn--mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+}
+
+/********************/
+/* BELOW 752px */
+/********************/
+
+@media (max-width: 47em) {
+  .hero {
+    max-width: 70rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: end;
+    gap: 6.4rem;
+  }
+  .hero-text-box {
+    text-align: center;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+  }
+  .hero-img-box {
+    text-align: center;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  .featured-in {
+    padding: 4.8rem 3.2rem 0;
+  }
+  .featured-logo {
+    height: 2rem;
+  }
+  .step-number {
+    font-size: 6.2rem;
+  }
+  .various-diet {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  .pricing-container {
+    width: 100%;
+    padding: 2.4rem 3.2rem;
+  }
+  .grid--4-cols,
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-footer {
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    gap: 4.8rem;
+  }
+  .address-col,
+  .footer-box {
+    grid-column: span 3;
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+}
+
+/********************/
+/* BELOW 544px */
+/********************/
+
+@media (max-width: 34em) {
+  .section-hero {
+    padding: 2.4rem 0;
+  }
+  .hero-img {
+    width: 80%;
+  }
+  .featured-in {
+    padding: 3.2rem 1.6rem 0;
+  }
+  .featured-logos {
+    gap: 1.2rem;
+  }
+  .featured-logo {
+    height: 1.2rem;
+  }
+  .hero-buttons {
+    justify-content: space-evenly;
+  }
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+  .section-how {
+    margin-top: 3.2rem;
+    padding-top: 3.2rem;
+  }
+  .section-how-container {
+    padding: 0 3.2rem;
+  }
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+  .step-1,
+  .step-2,
+  .step-3 {
+    gap: 4.8rem;
+    margin-bottom: 4.8rem;
+  }
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .meal-section {
+    padding: 0 3.2rem;
+  }
+  .testimonials-container {
+    padding: 3.2rem;
+  }
+  .testimonials-content {
+    grid-template-columns: 1fr;
+  }
+  .gallery-container {
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 3.2rem;
+  }
+  .section-pricing {
+    margin: 3.2rem auto 3.2rem;
+    padding: 3.2rem 3.2rem 0;
+  }
+  .section-cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-container {
+    padding: 3.2rem 3.2rem 0;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+  .cta-img-box {
+    height: 36rem;
+    grid-row: 1;
+    background-position: center;
+  }
+  .section-footer {
+    padding: 9.6rem 3.2rem;
+    column-gap: 3.2rem;
+    row-gap: 4.8rem;
+  }
+  .section-meals .meal-section {
+    padding-top: 1.6rem;
+  }
+}
+
+/**************************/
+/* Fixing Safari flexbox gap */
+/**************************/
+
+.no-flexbox-gap .nav-main-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .hero-buttons:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-meals:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .customers-imgs {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .tag-container {
+  margin-right: 0.4rem;
+}
+
+.no-flexbox-gap .meal-attributes {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-attribute li:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.no-flexbox-gap .social-list li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .contact-list li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.no-flexbox-gap .nav-list li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 56em) {
+  .no-flexbox-gap .nav-main-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 47em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
